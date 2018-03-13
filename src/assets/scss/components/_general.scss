@@ -1,0 +1,95 @@
+@import "settings";
+@include add-foundation-colors;
+
+@mixin max-width() {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+@mixin general-padding() {
+  padding: 3.5rem;
+  @media only screen and (max-width: 640px) {
+    padding: 2.5rem;
+  }
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.general-border-bottom{
+  border-bottom: 1px solid #f0f0f0;
+}
+.general-container{
+  @include max-width();
+}
+.general-dark{
+  h2, p {
+    color: $secondary-color;
+  }
+}
+.general-light{
+  h2, p {
+    color: $dark-gray;
+  }
+}
+.general-section{
+  //media query
+  margin-left: auto;
+  margin-right: auto;
+  @include general-padding();
+  width: 100%;
+  p {
+    font-size: 1.25rem;
+  }
+}
+.general-section-content{
+  @include max-width();
+  padding-top: 2.5rem;
+  text-align: left;
+}
+.general-section-note{
+  h5 {
+    color: $primary-color;
+  }
+  @include max-width();
+  text-align: left;
+}
+.general-section-title{
+  @include max-width();
+  text-align: left;
+  padding: 1.5rem 0;
+}
+.general-section-subheader{
+  @include max-width();
+  text-align: left;
+  font-size: 24px;
+}
+.general-hundred-vh{
+  height: 100vh;
+}
+.general-full-height{
+  height: 100%;
+}
+.general-full-width{
+  width: 100%;
+}
+.general-text-middle{
+  display: inline-block;
+  vertical-align: middle;
+}
+.second-inline{
+  display: inline-block;
+}
+.general-top-marging{
+ margin-top: 5%;
+}
+@media only screen and (max-width: 640px) {
+  .general-section{
+    padding: 2.5rem;
+    p {
+      font-size: 1rem;
+    }
+  }
+}
