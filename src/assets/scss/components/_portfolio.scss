@@ -1,7 +1,5 @@
 .portfolio{
-  .cell {
-    overflow: hidden;
-  }
+
 }
 .portfolio-header {
   width: 100vw;
@@ -10,36 +8,33 @@
   text-align: center;
   padding: 2rem;
 }
-#portfolio-1 {
-  background-image: url("../img/portfolio/portfolio-1-800x800.jpg");
-}
-#portfolio-2 {
-  background-image: url("../img/portfolio/portfolio-2-800x800.jpg");
-}
-#portfolio-3 {
-  background-image: url("../img/portfolio/portfolio-3-800x800.jpg");
-}
-#portfolio-4 {
-  background-image: url("../img/portfolio/portfolio-4-800x800.jpg");
-}
-#portfolio-5 {
-  background-image: url("../img/portfolio/portfolio-5-800x800.jpg");
-}
-#portfolio-6 {
-  background-image: url("../img/portfolio/portfolio-6-800x800.jpg");
-}
 .portfolio-item{
   width: 100%;
-  //Height equals width
-  padding-top: 100%;
-  background-position: center;
-  background-size: cover;
-  transition: all 0.8s ease-out;
-}
-.portfolio-item:hover {
-  transform: scale(1.4);
+  h5, img {
+    cursor: pointer;
+  }
 }
 .portfolio-item-description{
-  height: 100%;
+  padding: 1rem 0;
+  h5 {
+    transition: all 0.8s ease-out;
+  }
+}
+.portfolio-item-img{
+  width: 100%;
+  overflow: hidden;
+  img {
+    transition: all 0.8s ease-out;
+  }
+}
+.portfolio-item:hover {
+  h5 {
+    color: #fecd2f;
+  }
+  img {
+    transform: scale(1.4);
+  }
+}
+.portfolio-item-description{
   width: 100%;
 }
