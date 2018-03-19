@@ -10,3 +10,16 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+//TopBar
+function dropIt() {
+    document.getElementById("mobile-menu").style.top='0';
+}
+function pickIt() {
+    document.getElementById("mobile-menu").style.top='-100vh';
+}
+document.getElementById("mobile-menu-button").addEventListener ("click", dropIt, false);
+document.getElementById("mobile-menu-button-close").addEventListener ("click", pickIt, false);
+document.getElementById("mobile-menu-item-1").addEventListener ("click", pickIt, false);
+document.getElementById("mobile-menu-item-2").addEventListener ("click", pickIt, false);
+document.getElementById("mobile-menu-item-4").addEventListener ("click", pickIt, false);

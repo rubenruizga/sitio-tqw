@@ -2,7 +2,7 @@
 @include add-foundation-colors;
 
 .mynav{
-  background: $dark-gray;
+  background: $black;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
@@ -27,7 +27,7 @@
   @include max-width();
 }
 .mynav img{
-  height: 2rem;
+  height: 6rem;
 }
 #mobile-menu-button{
   display: none;
@@ -36,7 +36,7 @@
   display: inline;
 }
 .mynav-mobile{
-  background: $dark-gray;
+  background: $black;
   height: 100vh;
   padding: 1.5rem;
   position: absolute;
