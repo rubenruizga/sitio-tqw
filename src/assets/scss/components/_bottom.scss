@@ -1,0 +1,17 @@
+@include add-foundation-colors;
+
+#bottom{
+  background: black;
+  color: $primary-color;
+  padding-bottom: 1rem;
+  p {
+    font-size: 0.8rem;
+    line-height: 0.4rem;
+  }
+}
+#copyright {
+  margin-top: 1.5rem;
+}
+.contact-form{
+  padding: 3rem;
+}

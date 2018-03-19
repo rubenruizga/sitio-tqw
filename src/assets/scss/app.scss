@@ -5,10 +5,11 @@
 @import 'motion-ui';
 //Components
 @import "./components/contact.scss";
-@import "./components/_general.scss";
-@import "./components/_image-intro.scss";
-@import "./components/_mynav.scss";
-@import "./components/_portfolio.scss";
+@import "./components/bottom.scss";
+@import "./components/general.scss";
+@import "./components/image-intro.scss";
+@import "./components/mynav.scss";
+@import "./components/portfolio.scss";
 
 @include foundation-global-styles;
 // @include foundation-grid;
