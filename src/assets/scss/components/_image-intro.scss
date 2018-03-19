@@ -4,7 +4,7 @@
 .image-intro{
   position: relative;
   /* The image used */
-  background-image: url("../img/introBg.jpg");
+  background-image: url("../img/tqwIntro.png");
 
   /* Full height */
   height: 100%;
@@ -12,7 +12,7 @@
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   // background-color: black;
 
   min-height: 700px;
@@ -20,15 +20,16 @@
 .image-intro-subheader{
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 520px;
   padding-top: 2.5rem;
   text-align: center;
   font-size: 24px;
 }
 .image-intro-title{
+  color: $primary-color;
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 520px;
   overflow-x: hidden;
   text-align: center;
 }
