@@ -1,10 +1,15 @@
+@include add-foundation-colors;
 .portfolio{
-
+  background-color: $black;
+  color: $white;
 }
 .portfolio-header {
   width: 100vw;
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
+  p {
+    color: $primary-color
+  }
 }
 .portfolio-item{
   width: 100%;
@@ -16,6 +21,7 @@
   padding: 1rem 0;
   h5 {
     transition: all 0.8s ease-out;
+    color: $primary-color
   }
 }
 .portfolio-item-img{
@@ -27,7 +33,7 @@
 }
 .portfolio-item:hover {
   h5 {
-    color: #fecd2f;
+    color: $primary-color;
   }
   img {
     transform: scale(1.4);
