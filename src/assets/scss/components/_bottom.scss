@@ -1,7 +1,5 @@
-@include add-foundation-colors;
-
 #bottom{
-  background: black;
+  background: $black;
   color: $primary-color;
   padding-bottom: 1rem;
   p {
