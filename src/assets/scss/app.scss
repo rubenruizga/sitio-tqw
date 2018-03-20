@@ -1,5 +1,10 @@
 @charset 'utf-8';
-
+//fonts
+@import "font-awesome";
+@import "../fonts/avenir-black/font.css";
+@import "../fonts/avenir-light/font.css";
+@import "../fonts/avenir-medium/font.css";
+//foundation
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -10,8 +15,7 @@
 @import "./components/image-intro.scss";
 @import "./components/mynav.scss";
 @import "./components/portfolio.scss";
-//fonts
-@import "font-awesome";
+
 
 @include foundation-global-styles;
 // @include foundation-grid;

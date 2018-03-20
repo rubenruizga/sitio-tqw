@@ -14,7 +14,7 @@
   }
   a{
     color: $primary-color;
-    font-family: 'DIN-Bold';
+    font-family: 'Avenir-Black';
   }
   a:hover {
     color: $secondary-color;
@@ -45,7 +45,7 @@
 }
 .mynav-mobile-options{
   @include absolute-center;
-  font-family: 'DIN-Regular';
+  font-family: 'Avenir-Medium';
   font-size: 3rem;
   line-height: 6rem;
   text-align: center;

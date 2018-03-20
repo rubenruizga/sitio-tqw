@@ -7,7 +7,7 @@
   text-align: center;
   padding-top: 2rem;
   p {
-    color: $primary-color
+    color: $primary-color;
   }
 }
 .portfolio-item{
@@ -20,7 +20,8 @@
   padding: 1rem 0;
   h5 {
     transition: all 0.8s ease-out;
-    color: $primary-color
+    color: $primary-color;
+    font-family: 'Avenir-Medium';
   }
 }
 .portfolio-item-img{
