@@ -10,6 +10,7 @@
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
+    "firebase": "^4.12.0",
     "font-awesome": "^4.7.0",
     "foundation-sites": "~6.4.1",
     "jquery": ">=3.0.0",
