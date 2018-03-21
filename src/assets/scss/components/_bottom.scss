@@ -1,6 +1,8 @@
 #bottom{
   background: $black;
+  border-top: 2px solid $dark-gray;
   color: $primary-color;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   p {
     font-size: 0.8rem;
