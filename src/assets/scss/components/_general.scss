@@ -42,28 +42,6 @@ body, html{
     font-size: 1.25rem;
   }
 }
-.general-section-content{
-  @include max-width();
-  padding-top: 2.5rem;
-  text-align: left;
-}
-.general-section-note{
-  h5 {
-    color: $primary-color;
-  }
-  @include max-width();
-  text-align: left;
-}
-.general-section-title{
-  @include max-width();
-  text-align: left;
-  padding: 1.5rem 0;
-}
-.general-section-subheader{
-  @include max-width();
-  text-align: left;
-  font-size: 24px;
-}
 .general-hundred-vh{
   height: 100vh;
 }
