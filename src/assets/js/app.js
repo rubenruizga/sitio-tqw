@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 import firebase from 'firebase';
+import slick from 'slick-carousel';
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyD6to7A2fqVY_MGoy29U-c9HKhXXWwaYAA",
@@ -69,4 +70,20 @@ firebase.database().ref('/sites/tqw/portfolio').once('value').then(function(snap
     cell.append(portfolioItem);
     portfolio.append(cell);
   });
+  //projects
+  $(document).ready(function(){
+    $('.slider1').slick({
+      arrows: false,
+      autoplay: true
+    });
+    $('.slider2').slick({
+      arrows: false,
+      autoplay: true
+    });
+    var foo = $('#foo');
+    foo.on('click', function(e){
+    	$('.slider1').slick('slickNext');
+    });
+  });
+
 });
