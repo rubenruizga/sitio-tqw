@@ -110,7 +110,11 @@ function createProjects(project) {
   var sliderCell = document.createElement('div');
   var slider = document.createElement('div');
   var div = document.createElement('div');
+  var div1 = document.createElement('div');
+  var div2 = document.createElement('div');
   var img = document.createElement('img');
+  var img1 = document.createElement('img');
+  var img2 = document.createElement('img');
 
   reveal.className = 'large reveal';
   reveal.setAttribute("id", project.key);
@@ -135,6 +139,8 @@ function createProjects(project) {
   sliderCell.className = 'cell small-9';
   slider.className = project.key;
   img.src = 'assets/img/LiUNA-Local-1.png';
+  img1.src = 'assets/img/LiUNA-Local-1.png';
+  img2.src = 'assets/img/LiUNA-Local-1.png';
 
   projectName.append(name);
   centeredCell.append(projectName);
@@ -151,7 +157,11 @@ function createProjects(project) {
   conceptCell.append(conceptText);
 
   div.append(img);
+  div1.append(img1);
+  div2.append(img2);
   slider.append(div);
+  slider.append(div1);
+  slider.append(div2);
   slider.append(div);
   slider.append(div);
   sliderCell.append(slider);
@@ -165,8 +175,8 @@ function createProjects(project) {
   reveal.append(grid);
   projects.append(reveal);
 
-  // $('.' + project.key).slick({
-  //   arrows: false,
-  //   autoplay: true
-  // });
+  $('.' + project.key).slick({
+    arrows: false,
+    autoplay: true
+  });
 }
