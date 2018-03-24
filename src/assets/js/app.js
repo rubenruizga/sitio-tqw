@@ -88,6 +88,10 @@ function createProjects(project) {
   var reveal = document.createElement('div');
   var grid = document.createElement('div');
 
+  var closeButton = document.createElement('button');
+  var closeSpan = document.createElement('span');
+  var closeText = document.createTextNode('X');
+
   var nameCell = document.createElement('div');
   var blockCell = document.createElement('div');
   var centeredCell = document.createElement('div');
@@ -114,6 +118,11 @@ function createProjects(project) {
   reveal.setAttribute("id", project.key);
   reveal.setAttribute("data-reveal", '');
 
+  closeButton.className = 'close-button';
+  closeButton.setAttribute("data-close", '');
+  closeButton.setAttribute("type", 'button');
+  closeSpan.setAttribute("aria-hidden", 'true');
+
   grid.className = 'grid-x';
 
   nameCell.className = 'cell small-3';
@@ -132,6 +141,9 @@ function createProjects(project) {
 
   sliderCell.className = 'cell small-9';
   slider.className = project.key;
+
+  closeSpan.append(closeText);
+  closeButton.append(closeSpan);
 
   projectName.append(name);
   centeredCell.append(projectName);
@@ -162,6 +174,7 @@ function createProjects(project) {
   grid.append(conceptCell);
   grid.append(emptyCell);
   grid.append(sliderCell);
+  reveal.append(closeButton);
   reveal.append(grid);
   projects.append(reveal);
 
