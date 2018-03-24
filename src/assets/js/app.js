@@ -109,12 +109,6 @@ function createProjects(project) {
   var emptyCell = document.createElement('div');
   var sliderCell = document.createElement('div');
   var slider = document.createElement('div');
-  var div = document.createElement('div');
-  var div1 = document.createElement('div');
-  var div2 = document.createElement('div');
-  var img = document.createElement('img');
-  var img1 = document.createElement('img');
-  var img2 = document.createElement('img');
 
   reveal.className = 'large reveal';
   reveal.setAttribute("id", project.key);
@@ -127,10 +121,10 @@ function createProjects(project) {
   centeredCell.className = 'centered';
 
   coverCell.className = 'cell small-9';
-  coverImg.src = "assets/img/LiUNA-Local-1.png";
+  coverImg.src = project.img.cover;
 
   sideCell.className = 'cell small-3';
-  sideImg.src = "assets/img/Globe-and-Mail-detail-office-tower.png";
+  sideImg.src = project.img.side;
 
   conceptCell.className = 'projects-concept cell small-9';
 
@@ -138,9 +132,6 @@ function createProjects(project) {
 
   sliderCell.className = 'cell small-9';
   slider.className = project.key;
-  img.src = 'assets/img/LiUNA-Local-1.png';
-  img1.src = 'assets/img/LiUNA-Local-1.png';
-  img2.src = 'assets/img/LiUNA-Local-1.png';
 
   projectName.append(name);
   centeredCell.append(projectName);
@@ -156,14 +147,13 @@ function createProjects(project) {
   conceptCell.append(conceptHeader);
   conceptCell.append(conceptText);
 
-  div.append(img);
-  div1.append(img1);
-  div2.append(img2);
-  slider.append(div);
-  slider.append(div1);
-  slider.append(div2);
-  slider.append(div);
-  slider.append(div);
+  Object.keys(project.img.slider).map(function(key, index) {
+    var div = document.createElement('div');
+    var img = document.createElement('img');
+    img.src = project.img.slider[key];
+    div.append(img);
+    slider.append(div);
+  });
   sliderCell.append(slider);
 
   grid.append(nameCell);
