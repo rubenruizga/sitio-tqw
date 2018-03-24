@@ -3,6 +3,10 @@
 }
 /* This parent can be any width and height */
 .block {
+  background-image: url("../img/logo2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -10%;
   height: 100%;
   text-align: center;
 
@@ -27,4 +31,8 @@
   h3 {
     transform: rotate(270deg);
   }
+}
+
+.projects-logo{
+  position: fixed;
 }
