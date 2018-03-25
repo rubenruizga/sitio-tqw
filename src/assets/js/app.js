@@ -69,7 +69,7 @@ function createPortfolio(project) {
 
   projectName.append(name);
   projectType.append(type);
-  projectImg.src = project.previewImg;
+  projectImg.src = project.img.preview;
   projectImg.setAttribute('data-open', project.key);
 
   portfolioItemImg.append(projectImg);
