@@ -107,8 +107,8 @@ function createProjects(project) {
   var conceptCell = document.createElement('div');
   var conceptHeader = document.createElement('h3');
   var conceptText = document.createElement('p');
-  var header = document.createTextNode('project.header');
-  var text = document.createTextNode('project.text');
+  var header = document.createTextNode(project.header);
+  var text = document.createTextNode(project.description);
 
   var emptyCell = document.createElement('div');
   var sliderCell = document.createElement('div');
