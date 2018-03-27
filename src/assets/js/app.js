@@ -158,6 +158,14 @@ function createProjects(project) {
   conceptText.append(text);
   conceptCell.append(conceptHeader);
   conceptCell.append(conceptText);
+  Object.keys(project.data).map(function(key, index) {
+    var p = document.createElement('p');
+    var label = project.data[key].label;
+    var value = project.data[key].value;
+    var foo = document.createTextNode(label + ': ' + value);
+    p.append(foo);
+    conceptCell.append(p);
+  });
 
   Object.keys(project.img.slider).map(function(key, index) {
     var div = document.createElement('div');
