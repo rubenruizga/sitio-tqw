@@ -1,5 +1,10 @@
 .projects-concept {
-  padding: 4rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center; /* align vertical */
+}
+.projects-concept-data {
+  font-size: 0.8rem;
 }
 .projects-logo{
   background-image: url("../img/logo2.png");

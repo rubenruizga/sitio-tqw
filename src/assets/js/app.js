@@ -101,6 +101,7 @@ function createProjects(project) {
   var sideImg = document.createElement('img');
 
   var conceptCell = document.createElement('div');
+  var conceptContainer = document.createElement('div');
   var conceptHeader = document.createElement('h3');
   var conceptText = document.createElement('p');
   var header = document.createTextNode(project.header);
@@ -145,16 +146,18 @@ function createProjects(project) {
 
   conceptHeader.append(header);
   conceptText.append(text);
-  conceptCell.append(conceptHeader);
-  conceptCell.append(conceptText);
+  conceptContainer.append(conceptHeader);
+  conceptContainer.append(conceptText);
   Object.keys(project.data).map(function(key, index) {
     var p = document.createElement('p');
+    p.className = 'projects-concept-data';
     var label = project.data[key].label;
     var value = project.data[key].value;
     var foo = document.createTextNode(label + ': ' + value);
     p.append(foo);
-    conceptCell.append(p);
+    conceptContainer.append(p);
   });
+  conceptCell.append(conceptContainer);
 
   Object.keys(project.img.slider).map(function(key, index) {
     var div = document.createElement('div');
