@@ -133,7 +133,7 @@ function createProjects(project) {
 
   emptyCell.className = 'cell small-3';
 
-  sliderCell.className = 'cell small-9';
+  sliderCell.className = 'projects-slider cell small-9';
   slider.className = project.key;
 
   closeSpan.append(closeText);
@@ -177,6 +177,7 @@ function createProjects(project) {
 
   $('.' + project.key).slick({
     arrows: false,
-    autoplay: true
+    autoplay: true,
+    dots: true
   });
 }
