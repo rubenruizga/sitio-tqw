@@ -1,38 +1,8 @@
 .projects-concept {
   padding: 4rem;
 }
-/* This parent can be any width and height */
-.block {
+.projects-logo{
   background-image: url("../img/logo2.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center -10%;
-  height: 100%;
-  text-align: center;
-
-  /* May want to do this if there is risk the container may be narrower than the element inside */
-  white-space: nowrap;
-}
-
-/* The ghost, nudged to maintain perfect centering */
-.block:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-}
-
-/* The element to be centered, can also be of any width and height */
-.centered {
-  width: 80%;
-  display: inline-block;
-  vertical-align: middle;
-  h3 {
-    transform: rotate(270deg);
-  }
-}
-
-.projects-logo{
-  position: fixed;
+  background-position: top;
 }

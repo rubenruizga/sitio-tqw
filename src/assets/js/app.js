@@ -92,11 +92,7 @@ function createProjects(project) {
   var closeSpan = document.createElement('span');
   var closeText = document.createTextNode('X');
 
-  var nameCell = document.createElement('div');
-  var blockCell = document.createElement('div');
-  var centeredCell = document.createElement('div');
-  var projectName = document.createElement('h3');
-  var name = document.createTextNode(project.name);
+  var logoCell = document.createElement('div');
 
   var coverCell = document.createElement('div');
   var coverImg = document.createElement('img');
@@ -125,9 +121,7 @@ function createProjects(project) {
 
   grid.className = 'grid-x';
 
-  nameCell.className = 'cell small-3';
-  blockCell.className = 'block';
-  centeredCell.className = 'centered';
+  logoCell.className = 'projects-logo cell small-3';
 
   coverCell.className = 'cell small-9';
   coverImg.src = project.img.cover;
@@ -144,11 +138,6 @@ function createProjects(project) {
 
   closeSpan.append(closeText);
   closeButton.append(closeSpan);
-
-  projectName.append(name);
-  centeredCell.append(projectName);
-  blockCell.append(centeredCell);
-  nameCell.append(blockCell);
 
   coverCell.append(coverImg);
 
@@ -176,7 +165,7 @@ function createProjects(project) {
   });
   sliderCell.append(slider);
 
-  grid.append(nameCell);
+  grid.append(logoCell);
   grid.append(coverCell);
   grid.append(sideCell);
   grid.append(conceptCell);
